@@ -1,53 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!------custom css----->
+    <link rel="stylesheet" href="./assets/src/index.css">
     <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Document</title>
 </head>
+
 <body>
     <!----navbars--->
-    <nav class="navbar navbar-expand-lg bg-light navbar-light ">
-     <div class="container">
-         <a href="#" class="navbar-brand">Tim.  <span class="text-color-#6f42c1">Blog</span></a>
-         <!---Hamburger Toggler---->
-         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-         data-bs-target="#navmenu">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-     <!---Hamburger Toggler---->
-         <div class="collapse navbar-collapse" id="navmenu">
-             <ul class="navbar-nav ms-auto">
-             <a href="#" class="nav-link ">Home</a>
-             <a href="#" class="nav-link">Category</a>
-             <a href="#" class="nav-link">About Me</a>
-             <a href="#" class="nav-link"> Search</a>
-             <a href="#" class="nav-link">BuyMeACoffe</a>
-            </ul>
-         </div>
-     </div>
+    <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 ">
+        <div class="container">
+            <a href="#" class="navbar-brand"> <span class="txt-font">Tim</span>.<span
+                    class="myColor m-y-2">Blog</span></a>
+            <!---Hamburger Toggler---->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!---Hamburger Toggler---->
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <a href="#" class="nav-link ">Home</a>
+                    <a href="#" class="nav-link">Category</a>
+                    <a href="#" class="nav-link">About Me</a>
+                    <a href="#" class="nav-link"> Search</a>
+                    <a href="#" class="nav-link"> <button
+                            class="btn btn-sm btn-primary   myColor">BuyMeACoffe</button></a>
+                </ul>
+            </div>
+        </div>
     </nav>
 
     <!-------display----->
-  <section class="bg-light text-dark p-5 text-center">
-      <div class="container">
-          <div class="grid d-flex">
-          <div class="text">
-             <h2> Hi, I'm Timi <br>
-                Front End Dev</h2>
-                <p>On this blog i share tips and tricks, Frameworks,projects,tutorials,etc <br>
-                Make sure you subscribe to get the latest updates</p>
-          </div>
-          <div class="img">
-              <img src="./assets/images/pics/learn-coding 2.png" alt="" class="img-fluid">
-          </div>
-      </div>
-    </div>
-  </section>
+    <section class="bg-light text-dark p-5 p-lg-0 text-center text-sm-start">
+        <div class="container">
+            <div class="grid d-sm-flex align-items-center justify-content-between ">
+                <div class="text d-lg ">
+                    <h2> Hi, I'm Timi <br>
+                        Front End Dev</h2>
+                    <p class="lead">On this blog i share tips and tricks, Frameworks,projects,tutorials,etc <br>
+                        Make sure you subscribe to get the latest updates</p>
+                    <div
+                        class="mb-3 d-flex align-content-lg-start  d-md-flex justify-content-between align-items-center">
+                        <input type="email" class="form-control form-control-lg m-3 " id="exampleFormControlInput1"
+                            placeholder="Enter Your Email Here....">
+                        <button class="btn btn-lg w-20 h-25 btn-primary  m-3 ">Subscribe</button>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="./assets/images/pics/learn-coding 2.png" alt="" class="img-fluid align-items-lg-start">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------display----->
 
+    <!------Frame Works----->
+    <section class="bg-light p-5">
+        <div class="container">
+            <div class="frame-work-text d-flex justify-content-between m-4">
+                <!----- Browse Categories-->
+                <h4>Browse The Category</h4>
+                <!----See All Categories----->
+                <div class="see-all">
+                    <p>See All Categories</p>
+                </div>
+            </div>
+            <!----first grid/five columns------>
+            <div class="row text-center m2">
+                <div class="col-md">
+                    <div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+                </div>
+                <div class="col-md">34</div>
+                <div class="col-md">34</div>
+                <div class="col-md">34</div>
+                <div class="col-md">23</div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -62,6 +103,9 @@
 
 
     <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
